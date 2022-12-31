@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+h1,
+h2 {
+  font-family: Lato;
+}
+.tytul {
+  text-align: center;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: darkgray;
+}
+.wyswietlacz {
+  width: 100%;
+  min-height: 2rem;
+  height: fit-content;
+  border: 1px solid black;
+  margin: 5px 0;
+  text-align: right;
+  padding: 4px 5px;
+  font-size: 1rem;
+  font-family: 'Geostar Fill', cursive;
+  background-color: grey;
+  word-wrap: normal;
+}
+
+.przyciski {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.liczbyWrapper,
+.funkcjeWrapper {
+  display: block;
+  width: calc( 50% - 5px );
+  margin: 0;
+}
+.liczby1,
+.funkcje {
+  display: flex;
+  height: 150px;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px 0;
+  margin: 5px 0;
+  background-color: grey;
+}
+
+.liczby,
+.funkcjaZnak {
+  display: block;
+  width: 25%;
+  margin: 2px 5px;
+  height: 20%;
+}
+.funkcja,
+.funkcjaPierw,
+.funkcjaKas {
+  display: block;
+  height: 25%;
+  margin: 2px 5px;
+  width: 25%;
+}
+
+.funkcjaWynik {
+  display: block;
+  height: 25%;
+  margin: 2px 5px;
+  width: calc(50% + 10px);
+}
