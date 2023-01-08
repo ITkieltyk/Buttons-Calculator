@@ -11,9 +11,11 @@ h2 {
 }
 .wrapper {
   max-width: 600px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 10px;
   background-color: darkgray;
+  border-radius: 10px;
 }
 .wyswietlacz {
   width: 100%;
