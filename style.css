@@ -16,12 +16,13 @@ h2 {
   padding: 10px;
   background-color: darkgray;
   border-radius: 10px;
+  box-shadow: 3px -3px 2px 2px rgba(112, 112, 112, 0.904);
 }
-.wyswietlacz {
+.wyswietlaczIn {
   width: 100%;
   min-height: 2rem;
   height: fit-content;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 5px 0;
   text-align: right;
   padding: 4px 5px;
@@ -29,6 +30,29 @@ h2 {
   font-family: 'Geostar Fill', cursive;
   background-color: grey;
   word-wrap: normal;
+  box-shadow: inset 0 0 3px 1px rgb(80, 80, 80);
+}
+.wyswietlacz {
+  position: relative;
+}
+.board {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  font-size: 1.2rem;
+  font-family: 'Geostar Fill', cursive;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 1000ms;
+  animation-timing-function:ease-in-out;
+
+
+
+}
+
+@keyframes blink {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 .przyciski {
@@ -48,12 +72,13 @@ h2 {
 .funkcje {
   display: flex;
   height: 150px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   flex-wrap: wrap;
   justify-content: center;
   padding: 7px 0;
   margin: 5px 0;
   background-color: grey;
+  box-shadow: inset 0 0 2px 3px rgb(112, 112, 112)
 }
 
 .liczby,
@@ -77,4 +102,16 @@ h2 {
   height: 25%;
   margin: 2px 5px;
   width: calc(50% + 10px);
+}
+
+button {
+  box-shadow: 0 0 2px 2px darkgrey;
+  font-size: 1em;
+}
+button:hover {
+ box-shadow: 0 0 2px 2px rgb(66, 66, 66);
+ border-radius: 2px;
+ border: none;
+ font-size: 1.1em;
+
 }
